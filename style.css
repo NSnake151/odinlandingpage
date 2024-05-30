@@ -1,0 +1,116 @@
+
+
+.webpage , .header , .description , .randominfo , .quote , .a_call , .footer , .links, 
+.rightlinks , .leftdesc , .quote , .leftacall , .a_call, .description , .randominfo, 
+.randomimages , .randomimage , .a_callcontainer{
+    display: flex;
+    
+    
+}
+
+.footer , .header , .description{
+    background-color: rgb(1, 1, 82);
+    color: white;
+    
+}
+
+.webpage{
+    flex-direction: column;
+    
+}
+
+
+.header{
+    align-content: center;
+    justify-content: center;
+}
+.footer{
+    align-content: center;
+    justify-content: center;
+    
+    
+}
+
+.links{
+    
+    list-style: none;    
+    margin: 0;
+    padding: 0;
+
+}
+
+.rightlinks{
+    margin-left: auto;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.logo{
+    font-weight: 900;
+}
+
+.description{
+
+    background-color: rgb(204, 63, 204);
+    justify-content: space-between;
+
+
+}
+
+.leftdesc{
+
+    flex-direction: column;
+}
+
+.descimage{
+
+    margin: 24px;
+}
+
+.randominfo{
+    flex-direction: column;
+    background-color: blanchedalmond;
+
+}
+
+.randomimages{
+
+    justify-content: space-between;
+    margin: 24px;
+    flex-wrap: wrap;
+
+}
+
+.randomimage{
+    flex-direction: column;
+    
+}
+
+
+.a_callcontainer{
+    justify-content: center;
+}
+.a_call {
+    background: lightblue;
+    width: 480px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+    display: flex;
+    margin: 24px;
+    
+}
+
+.quote{
+
+    background-color: lightgoldenrodyellow;
+}
+
+
+
+.leftacall{
+
+}
