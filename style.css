@@ -1,13 +1,20 @@
 
 
-.webpage , .header , .description , .randominfo , .quote , .a_call , .footer , .links, 
-.rightlinks , .leftdesc , .quote , .leftacall , .a_call, .description , .randominfo, 
-.randomimages , .randomimage , .a_callcontainer{
+.webpage , .header , .description , .randominfo , .quote , .a_call , .footer , .left, 
+.right , .leftdesc , .quote , .leftacall , .a_call, .description , .randominfo, 
+.randomimages , .randomimage , .a_callcontainer , .random_header_container{
     display: flex;
     
     
 }
 
+html{
+    height: 100%;
+}
+.header , .description , .randominfo , .quote , .a_call , .footer{
+    padding-left: 72px;
+    padding-right: 72px;
+}
 .footer , .header , .description{
     background-color: rgb(1, 1, 82);
     color: white;
@@ -16,13 +23,16 @@
 
 .webpage{
     flex-direction: column;
+    margin: 0;
+    height: 100%;
+    
     
 }
 
 
 .header{
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 .footer{
     align-content: center;
@@ -31,21 +41,33 @@
     
 }
 
-.links{
-    
-    list-style: none;    
+.left , .right{
     margin: 0;
     padding: 0;
-
+    list-style: none;
+    padding-top: 12px;
+    padding-bottom: 12px; 
 }
 
-.rightlinks{
-    margin-left: auto;
-    justify-content: space-between;
+.right{    
+    
+    gap: 12px;
+    
+    
 }
+
+.left{
+    font-weight: 900;
+    font-size: 32px;
+    
+}
+
+
 
 a{
     text-decoration: none;
+    color: white;
+    
     
 }
 
@@ -66,14 +88,27 @@ a{
     flex-direction: column;
 }
 
+.sign_up_button{
+    background-color: rgb(105, 105, 233);
+    border-radius: 4px;
+    max-width: 96px;
+
+}
+
 .descimage{
 
     margin: 24px;
 }
 
+.random_header_container{
+    justify-content: center;
+}
+
 .randominfo{
     flex-direction: column;
     background-color: blanchedalmond;
+    flex: 1;
+    
 
 }
 
@@ -88,20 +123,26 @@ a{
 .randomimage{
     flex-direction: column;
     
+    
 }
 
 
 .a_callcontainer{
     justify-content: center;
+    display: flex;
+    
+    
 }
 .a_call {
+   
+    
     background: lightblue;
     width: 480px;
     border-radius: 10px;
     box-shadow: 2px 4px 16px rgba(0,0,0,.2);
     display: flex;
     margin: 24px;
-    
+    justify-content: space-between;
 }
 
 .quote{
@@ -113,4 +154,11 @@ a{
 
 .leftacall{
 
+    flex-direction: column;
+}
+
+.rightacall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
