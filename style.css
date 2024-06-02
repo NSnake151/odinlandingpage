@@ -148,6 +148,31 @@ a{
 .quote{
 
     background-color: lightgoldenrodyellow;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+
+.thequote{
+
+    font-style: italic;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 24px;
+
+}
+
+.source{
+
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 
